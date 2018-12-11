@@ -1,18 +1,40 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TypeScript Demos</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <link rel="preload" href="IMG_9543.jpg" as="image" media="(max-width: 600px)">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" as="style">
+    <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" as="style">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<style type="text/css">
         body {
             margin: 20px;
         }
     </style>
 </head>
 <body>
+    <script>
+        var mediaQueryList = window.matchMedia("(max-width: 600px)");
+        var header = document.querySelector('header');
+
+        if(mediaQueryList.matches) {
+          header.style.backgroundImage = 'url(IMG_9543.jpg)';
+        } else {
+          header.style.backgroundImage = 'url(IMG_9543.jpg)';
+        }
+      </script>
     <h1>TypeScript Examples</h1>
     <br />
     <ul>
+        <img  src="IMG_9543.jpg">
         <li><a href="examples/basic-types/index.html">Basic Types</a></li>
         <li><a href="examples/parameter-types/index.html">Parameter Types</a></li>
         <li><a href="examples/optional-default-parameters/index.html">Optional/Default Parameters</a></li>
@@ -32,3 +54,4 @@
     </ul>
 </body>
 </html>
+

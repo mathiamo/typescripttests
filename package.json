@@ -7,6 +7,11 @@
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\""
   },
   "dependencies": {
+    "@types/mozjpeg": "^5.0.0",
+    "@types/node": "^10.12.12",
+    "mozjpeg": "^6.0.1",
+    "node-gzip": "^1.1.2",
+    "require": "^2.4.20",
     "systemjs": "0.20.17"
   },
   "devDependencies": {
