@@ -6,7 +6,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-    <link rel="preload" href="IMG_9543.jpg" as="image" media="(max-width: 600px)">
+    <link rel="preload" href="IMG_9543.jpg" as="image">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -21,20 +21,9 @@
     </style>
 </head>
 <body>
-    <script>
-        var mediaQueryList = window.matchMedia("(max-width: 600px)");
-        var header = document.querySelector('header');
-
-        if(mediaQueryList.matches) {
-          header.style.backgroundImage = 'url(IMG_9543.jpg)';
-        } else {
-          header.style.backgroundImage = 'url(IMG_9543.jpg)';
-        }
-      </script>
     <h1>TypeScript Examples</h1>
     <br />
     <ul>
-        <img  src="IMG_9543.jpg">
         <li><a href="examples/basic-types/index.html">Basic Types</a></li>
         <li><a href="examples/parameter-types/index.html">Parameter Types</a></li>
         <li><a href="examples/optional-default-parameters/index.html">Optional/Default Parameters</a></li>
